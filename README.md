@@ -26,3 +26,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 # SpotifyCloneAngularPragma
+
+# Preview SpotifyAngular
+
+### Demo
+![App Screenshot](https://i.gyazo.com/d5b402ed687c86fd1fba9740a12d913e.gif)
