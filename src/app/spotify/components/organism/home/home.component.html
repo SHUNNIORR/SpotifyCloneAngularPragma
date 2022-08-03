@@ -1,0 +1,38 @@
+<div class="home__wrapper">
+  <div class="home__maincontainer">
+    <h2 class="home__maintitle">¡Nuevos lanzamientos!</h2>
+    <p class="home__subtitle">¡Álbumes recién salidos del horno!</p>
+    <div class="home__newreleasesListContainer">
+      <ul
+        class="home__newreleasesList"
+        *ngFor="let item of newReleases.albums?.items!"
+      >
+        <app-list-item [item]="item"></app-list-item>
+      </ul>
+    </div>
+  </div>
+  <div class="home__maincontainer">
+    <h2 class="home__maintitle">¡Playlists destacadas!</h2>
+    <p class="home__subtitle">¡Lo mejor del momento!</p>
+    <div class="home__newreleasesListContainer">
+      <ul
+        class="home__newreleasesList"
+        *ngFor="let item of featuredPlaylist.playlists?.items!"
+      >
+        <app-playlist-item [item]="item"></app-playlist-item>
+      </ul>
+    </div>
+  </div>
+  <div class="home__maincontainer">
+    <h2 class="home__maintitle">¡Tus canciones más sonadas!</h2>
+    <p class="home__subtitle">¡De ti para ti!</p>
+    <div class="home__newreleasesListContainer">
+      <ul
+        class="home__newreleasesList"
+        *ngFor="let item of usersTopTracks?.items!"
+      >
+        <app-userstoptracks-item [item]="item"></app-userstoptracks-item>
+      </ul>
+    </div>
+  </div>
+</div>

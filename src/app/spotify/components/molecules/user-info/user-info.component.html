@@ -1,0 +1,21 @@
+
+<div class="userinfo__container">
+  <div *ngIf="thereInfo===false; else elseBlock" >
+    <p userinfo__username>cargando...</p>
+  </div>
+    <ng-template #elseBlock>
+    <div class="userinfo__imgcontainer">
+      <a href="{{ infoUser.external_urls?.spotify! }}" target="_blank">
+        <img
+          src="{{infoUser!.images?.[0]?.url}}"
+          alt=""
+          class="userinfo__imgprofile"
+        />
+      </a>
+    </div>
+    <div>
+      <p class="userinfo__username">{{ infoUser.display_name }}</p>
+      <p class="userinfo__email">{{ infoUser.email }}</p>
+    </div>
+  </ng-template>
+  </div>

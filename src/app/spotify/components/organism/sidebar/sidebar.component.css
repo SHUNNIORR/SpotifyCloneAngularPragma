@@ -1,0 +1,52 @@
+
+.img-icon{
+    height: 60px;
+    width: auto;
+}
+.navbar{
+    background-color: black !important;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.apptitle__container{
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    height: 60px;
+}
+.active > a{
+   color: #1BD760;
+   border-bottom: 2px solid #1BD760;
+}
+.nav-item{
+    cursor: pointer;
+}
+.apptitle__maintext{
+    margin-bottom: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+.apptitle__maintext:hover{
+    padding-bottom: 7px;
+}
+.apptitle__greentext{
+    content: 'MyMusicApp';
+    color: #1BD760;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    margin-bottom: 0px;
+}
+.apptitle__textcontainer{
+    position: relative;
+}
+.apptitle__textcontainer:hover > .apptitle__greentext{
+    margin-top: 3px;
+}

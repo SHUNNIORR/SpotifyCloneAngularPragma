@@ -1,0 +1,43 @@
+<!-- <div class="sidebar">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div> -->
+<nav class="px-2 navbar navbar-expand-lg navbar-dark bg-dark">
+  <div routerLink="home" class="apptitle__container">
+    <img
+      class="img-icon"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"
+    />
+    <div class="apptitle__textcontainer">
+      <h2 class="apptitle__maintext" >MyMusicApp</h2>
+      <h2 class="apptitle__greentext" >MyMusicApp</h2>
+    </div>
+  </div>
+
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div
+    class=" collapse navbar-collapse "
+    [ngClass]="{ 'show': navbarOpen }"
+  >
+    <ul class="navbar-nav mr-auto">
+      <li routerLink="home" class="nav-item" routerLinkActive="active">
+        <a class="nav-link">Home</a>
+      </li>
+      <li routerLink="search" class="nav-item" routerLinkActive="active">
+        <a class="nav-link">Buscar</a>
+      </li>
+
+      <li routerLink="favorites" class="nav-item" [routerLinkActive]="'active'">
+        <a class="nav-link">Mis favoritos</a>
+      </li>
+      <li class="nav-item" (click)="cerrarSesion()" routerLinkActive="active">
+        <a class="nav-link">Cerrar sesión</a>
+      </li>
+    </ul>
+  </div>
+</nav>

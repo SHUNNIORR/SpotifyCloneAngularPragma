@@ -1,0 +1,28 @@
+.userinfo__container{
+    padding: 10px 20px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    background-color: rgb(17, 17, 17);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+.userinfo__imgprofile{
+    width: 50px;
+    border-radius: 50%;
+}
+.userinfo__imgcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+p{
+    margin-bottom: 0;
+}
+.userinfo__email{
+    color: rgb(146, 146, 146);
+    font-family: SpotifyFontLight;
+}

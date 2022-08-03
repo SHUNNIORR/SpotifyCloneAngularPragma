@@ -1,0 +1,16 @@
+<div class="search__maincontainer">
+    <h2 class="search__maintitle">
+        Encuentra tu mejor canción.
+    </h2>
+    <form (ngSubmit)="searchATerm()" class="search__form" action="">
+        <input type="text" class="search__input" name="searchterm" placeholder="Busca tu canción..." [(ngModel)]="searchterm" required>
+        <input [className]="searchterm === ''? 'disabled' : 'search__button'" type="submit" value="Buscar">
+    </form>
+    <ul
+        class="home__newreleasesList"
+        *ngFor="let item of SearchResults"
+      >
+      <app-searchtrack-item [tracks]="item" ></app-searchtrack-item>
+    </ul>
+
+</div>

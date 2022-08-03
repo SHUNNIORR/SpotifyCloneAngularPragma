@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "SpotifyFontBold";
+  src: url("./fonts/Gotham-Bold.otf");
+}
+@font-face {
+  font-family: "SpotifyFontLight";
+  src: url("./fonts/Gotham-Light.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: SpotifyFontBold;
+  font-size: 16px;
+  background-color: black;
+}

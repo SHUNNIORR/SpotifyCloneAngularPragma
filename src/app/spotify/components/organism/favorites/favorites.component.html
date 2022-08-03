@@ -1,0 +1,14 @@
+<div class="home__wrapper">
+    <div class="home__maincontainer">
+        <h2 class="home__maintitle">¡Tus canciones favoritas!</h2>
+        <p class="home__subtitle">¡Tus canciones, tu esencia!</p>
+        <div class="home__newreleasesListContainer">
+            <ul
+              class="home__newreleasesList"
+              *ngFor="let item of userFavoriteTracks.items"
+            >
+              <app-userfavoritetracks-item [item]="item"></app-userfavoritetracks-item>
+            </ul>
+          </div>
+    </div>
+</div>

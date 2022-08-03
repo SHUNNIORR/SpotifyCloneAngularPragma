@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User-info tests Debe ser igual al snapshot 1`] = `
+<div
+  id="root0"
+>
+  <div
+    class="userinfo__container"
+  >
+    <div>
+      <p
+        userinfo__username=""
+      >
+        cargando...
+      </p>
+    </div>
+    
+    
+  </div>
+</div>
+`;

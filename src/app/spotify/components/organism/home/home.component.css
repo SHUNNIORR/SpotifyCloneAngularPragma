@@ -1,0 +1,28 @@
+.home__maincontainer{
+    min-width: 350px;
+    max-width: 400px;
+    width: auto ;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 10px 10px;
+}
+.home__subtitle{
+    font-family: SpotifyFontLight;
+    color: rgb(146, 146, 146);
+}
+.home__newreleasesList{
+    padding: 0;
+}
+.home__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+@media (min-width:992px) {
+    .home__wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

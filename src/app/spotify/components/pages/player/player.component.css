@@ -1,0 +1,13 @@
+.player__container{
+    display: flex;
+    flex-direction: column;
+}
+.player__maincontent{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}

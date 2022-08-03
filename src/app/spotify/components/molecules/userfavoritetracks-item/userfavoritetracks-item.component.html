@@ -1,0 +1,18 @@
+<div class="card__container">
+    <img src={{item.track.album.images[0].url}} class="alt=" class="card__itemimg">
+    <a href={{item.track.external_urls.spotify}} target="_blank" class="card__playbutton">
+        <img src="https://cdn-icons-png.flaticon.com/512/27/27223.png" width="20" height="20"/>
+    </a>
+    <button class="card__heartbutton">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077086.png" width="20" height="20" />
+    </button>
+    <div class="card__infocontainer">
+        <h4 class="card__itemtitle">{{item.track.name}}</h4>
+        <div class="card__moreinfo">
+            <p class="card__singername">{{item.track.artists[0].name}}</p>
+            <div class="card__typeofitem">
+                <p>{{item.track.type}}</p>
+            </div>
+        </div>
+    </div>
+</div>
